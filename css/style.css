@@ -1,0 +1,22 @@
+body{
+  background-color: aqua;
+}
+main{
+  width: 50%;
+    height: 100vh;
+    justify-self: center;
+    align-content: center;
+}
+
+form{
+    background-color: cornsilk;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content-container{
+    display: flex;
+    justify-content: space-between;
+}
