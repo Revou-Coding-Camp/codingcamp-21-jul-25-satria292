@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tedo List - Satria</title>
+
+  <!-- CSS External -->
+  <link rel="stylesheet" href="css\style.css">
+
+  <!-- Teilwins CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <main>
+    <!-- Title Todo -->
+    <header>
+      <h1 class="text-3xl font-bold">Todo List</h1>
+    </header>
+    <!-- form Todo -->
+    <form action="">
+      <div>
+        <label for="todo-input" class="block text-sm font-medium text-gray-700">Add a new Task:</label>
+        <input type="text" id="todo-input" placeholder="Enter your task here" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">
+      </div>
+      <div>
+        <label for="date-input" class="block text-sm font-medium text-gray-700">Data:</label>
+        <input type="date" id="date-input" placeholder="Enter your task here" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">
+      </div>
+      <div>
+        <button class="px-[26px] py-[2px] rounded-[8px] bg-indigo-500 text-white">+</button>
+      </div>
+    </form>
+    <!-- List Todo -->
+     <section>
+      <div class="content-container">
+        <button class="px-[26px] py-[2px] rounded-[8px] bg-gray-500 text-white">Filter</button>
+        <button class="px-[26px] py-[2px] rounded-[8px] bg-red-500 text-white">Delete All</button>
+      </div>
+
+      <div>
+        <ul id="todo-list">
+         <li class="todo-item flex justify-between item-center bg-white p-4 rounded-md shadow-sm mb-2">
+          <span>Sample Task</span>
+          <div>
+            <button class="px-[10px] py-[2px] bg-gray-500 text-white rounded-md">Edit</button>
+            <button class="px-[10px] py-[2px] bg-red-500 text-white rounded-md">Delete</button>
+          </div>
+         </li>
+        </ul>
+      </div>
+     </section>
+  </main>
+<!-- Javascript Extensen -->
+<script src="js/script.js"></script>
+</body>
+</html>
